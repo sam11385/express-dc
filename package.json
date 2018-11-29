@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/sam11385/express-dc/issues"
   },
-  "homepage": "https://github.com/sam11385/express-dc#readme"
+  "homepage": "https://github.com/sam11385/express-dc#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
 }
