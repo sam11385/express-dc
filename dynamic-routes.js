@@ -8,8 +8,8 @@ app.get('/:id', function(request, response) {
 });
 
 // Dynamic routing with a dog breed
-// app.get('/dogs/breeds/:breed/images/random', function(request, response) {
-//   response.send(`Dog breed: ${request.params.breed}`);
-// });
+app.get('/dogs/breeds/:breed/images/random', function(request, response) {
+  response.send(`Dog breed: ${request.params.breed}`);
+});
 
 app.listen(port);

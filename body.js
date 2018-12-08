@@ -7,8 +7,11 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.post('todos', function(request, response) {
-  console.log(request.body);
+let todoList = [{ key: 'test' }];
+
+app.post('/api/todos/', function(req, res) {
+  todoList.push(req.body);
+  res.send(todoList);
 });
 
 app.listen(port);
