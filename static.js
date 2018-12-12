@@ -1,7 +1,6 @@
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
-const axios = require('axios');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -50,6 +49,10 @@ var owners = [
 // GET /api/owners
 app.get('/api/owners', function(req, res, next) {
   res.json(owners);
+});
+
+app.post('api/owners', function(req, res) {
+  res.send('bill');
 });
 
 app.listen(3000);
